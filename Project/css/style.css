@@ -13,4 +13,70 @@ svg {
 
 img {
     height: 300px;
+    padding: 5px;
+    border: solid 1px #EFEFEF;
+}
+
+img:hover {
+    border: solid 1px #CCC;
+    box-shadow: 1px 1px 5px #999;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, white, beige);
+    /*background: url("img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+h1,
+h2,
+h3 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    75% {
+        margin-left: 40%;
+        width: 150%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+nav {
+    animation-duration: 3s;
+    animation-name: pulse;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    padding: 10px 40px;
+    overflow: hidden;
+}
+
+button:hover {
+    transform: scale(1.2);
+    border: 3px dotted blue;
+    color: blue;
+    background: white;
 }
