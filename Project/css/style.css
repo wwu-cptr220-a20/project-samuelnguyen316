@@ -30,9 +30,7 @@ body {
     background-size: cover;*/
 }
 
-h1,
-h2,
-h3 {
+h1 {
     animation-duration: 3s;
     animation-name: slidein;
 }
